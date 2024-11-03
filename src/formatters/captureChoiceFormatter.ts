@@ -170,7 +170,7 @@ export class CaptureChoiceFormatter extends CompleteFormatter {
 				? this.getFrontmatterEndPosition(this.file)
 				: -1;
 			return this.insertTextAfterPositionInBody(
-				insertAfterLineAndFormatted,
+				insertAfterLineAndFormatted + "\n",
 				this.fileContent,
 				 
 				frontmatterEndPosition,
