@@ -383,7 +383,7 @@ export abstract class Formatter {
 					output += "\\";
 					i++;
 				} else {
-					// Invalid use of escape character, but we keep it anyway.
+					// Would be an error, but let's add it as a simple slash.
 					output += '\\';
 				}
 			} else {
