@@ -1,4 +1,4 @@
-import type { Plugin } from "obsidian";
+import type { App, Plugin } from "obsidian";
 
 declare module "obsidian" {
 	interface App {
@@ -30,4 +30,8 @@ declare module "obsidian" {
 			findCommand: (commandId: string) => Command;
 		}
 	}
+}
+
+declare global {
+  const app: App;
 }
